@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- Antonina Barankevich CS 81 Final Last Edited: July 30, 2020-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag n Drop</title>
+    <link rel="stylesheet" href="final3.css">
+    <!--link for the Orbitron font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chau+Philomene+One:ital@0;1&family=Kalam:wght@700&family=Permanent+Marker&family=Recursive:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="app">
+        <nav class="navbar">
+            <div class="navbar_header"></div>
+            <header>
+                <div class="navbar_btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="real_clock">
+                    <div class="hand hour" data-hour-hand></div>
+                    <div class="hand minute" data-minute-hand></div>
+                    <div class="hand second" data-second-hand></div>
+                    <div class="number num1">|</div>
+                    <div class="number num2">|</div>
+                    <div class="number num3">|</div>
+                    <div class="number num4">|</div>
+                    <div class="number num5">|</div>
+                    <div class="number num6">9</div>
+                    <div class="number num7">|</div>
+                    <div class="number num8">|</div>
+                    <div class="number num9">|</div>
+                    <div class="number num10">|</div>
+                    <div class="number num11">|</div>
+                    <div class="number num12">12</div>
+                </div>
+                <div id="clock"></div>
+                <h2>My SMC Computer Science Plan</h2>
+                
+            </header>
+            <ul class="navbar_links">
+                <!-- single link-->
+                <li><a href="final3.html" class="navbar_single">Home</a></li>
+                <li><a href="https://smccis.smc.edu/smcweb/f?p=118:1::::::" class="navbar_single">Schedule</a></li>
+                <li><a href="http://www.smc.edu/AcademicPrograms/CSIS/Pages/default.aspx" class="navbar_single">SMC CS Department</a></li>
+            </ul>
+        </nav>
+        <p class="instruction">Drag and drop desired courses</p>
+        <div class="lists">
+            <div class="list"><h3>Courses Available</h3>
+                <div class="list-item" draggable="true">CS 3 Introduction to Computer Systems</div>
+                <div class="list-item" draggable="true">CS 7 Programming for Non-CS Majors</div>
+                <div class="list-item" draggable="true">CS 9A Technology Project Management I</div>
+                <div class="list-item" draggable="true">CS 9B Technology Project Management II</div>
+                <div class="list-item" draggable="true">CS 15 Visual Basic Programming</div>
+                <div class="list-item" draggable="true">CS 17 Assembly Language Programming</div>
+                <div class="list-item" draggable="true">CS 19 Advanced Visual Basic Programming</div>
+                <div class="list-item" draggable="true">CS 20A Data Structures with C++</div>
+                <div class="list-item" draggable="true">CS 20B Data Structures with Java</div>
+                <div class="list-item" draggable="true">CS 30 MATLAB Programming</div>
+                <div class="list-item" draggable="true">CS 40 Operating Systems</div>
+                <div class="list-item" draggable="true">CS 42 Digital Logic</div>
+                <div class="list-item" draggable="true">CS 50 C Programming</div>
+                <div class="list-item" draggable="true">CS 52 C++ Programming</div>
+                <div class="list-item" draggable="true">CS 53A iOS Development with Swift</div>
+                <div class="list-item" draggable="true">CS 55 Java Programming</div>
+                <div class="list-item" draggable="true">CS 56 Advanced Java Programming</div>
+                <div class="list-item" draggable="true">CS 60 Database Concepts and Applications</div>
+                <div class="list-item" draggable="true">CS 70 Network Fundamentals and Architecture</div>
+                <div class="list-item" draggable="true">CS 73A Fundamentals of Computer Security</div>
+                <div class="list-item" draggable="true">CS 73B Computer Forensics Fundamentals</div>
+                <div class="list-item" draggable="true">CS 73C Cybersecurity and Ethical Hacking</div>
+                <div class="list-item" draggable="true">CS 77A Salesforce Administration Essentials</div>
+                <div class="list-item" draggable="true">CS 77B Salesforce Developer Essentials</div>
+                <div class="list-item" draggable="true">CS 79A Introduction to Cloud Computing</div>
+                <div class="list-item" draggable="true">CS 79B Database Essentials in Amazon Web Services</div>
+                <div class="list-item" draggable="true">CS 79C Compute Engines in Amazon Web Services</div>
+                <div class="list-item" draggable="true">CS 79D Security in Amazon Web Services</div>
+                <div class="list-item" draggable="true">CS 79E Best Practices in Amazon Web Services</div>
+                <div class="list-item" draggable="true">CS 79F Machine Learning on AWS</div>
+                <div class="list-item" draggable="true">CS 79Y Microsoft Azure Database Essentials</div>
+                <div class="list-item" draggable="true">CS 79Z Microsoft Azure Essentials</div>
+                <div class="list-item" draggable="true">CS 80 Internet Programming</div>
+                <div class="list-item" draggable="true">CS 73B Computer Forensics Fundamentals</div>
+                <div class="list-item" draggable="true">CS 81 JavaScript Programming</div>
+                <div class="list-item" draggable="true">CS 83R Server-Side Ruby Web Programming</div>
+                <div class="list-item" draggable="true">CS 85 PHP Programming</div>
+                <div class="list-item" draggable="true">CS 87A Python Programming</div>
+                <div class="list-item" draggable="true">CS 88B Independent Studies in Computer Science</div>
+                
+            </div>
+            <div class="list"><h3>Courses Taken</h3>
+                
+            </div>
+            <div class="list"><h3>Courses Planned</h3>
+        <!--<div class="list1">Fall 2020</div>   
+            <div class="list1">Winter 2021</div>
+            <div class="list1">Spring 2021</div>
+            <div class="list1">Summer2021</div>
+            </div> -->
+        </div>
+    </div>
+    <script src="final3.js"></script>
+    
+</body>
+</html>

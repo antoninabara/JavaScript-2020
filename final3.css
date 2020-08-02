@@ -1,0 +1,253 @@
+<!-- Antonina Barankevich, CS 81 Final, Last Edited: July 30, 2020-->
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(172, 185, 185, 0.645);
+    font-family: Helvetica, sans-serif;
+}
+
+h2 {
+    color:rgb(106, 78, 158);
+    font-family: 'Kalam', cursive;
+    font-size: 2.7rem;
+}
+
+.instruction {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.5rem;
+    color:rgb(100, 71, 71);
+
+}
+
+h3 {
+    color: rgb(168, 80, 8);
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 1.6rem;
+}
+.app {
+    display: flex;
+    width: 100vw;
+    height:270vh;
+    flex-flow: column;
+}
+
+header {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 180px;
+    background: rgba(113, 117, 77, 0.719);
+    border-bottom: 0.3rem solid rgb(88, 84, 84);
+}
+
+.lists {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow-x: scroll;
+    margin: 20px auto;
+}
+.list {
+    text-align: center;
+}
+
+.lists .list {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    width: 100%;
+    min-width: 250px;
+    max-width:350px;
+    height: 100%;
+    min-height: 150px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    padding: 8px;
+    transition: all 0.2s linear;
+    border-radius: 8px;
+}
+
+.lists .list .list-item {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(28, 1, 109);
+    border-radius: 6px;
+    padding: 5px 4px;
+    margin: 4px 0px;
+    box-shadow: 1px 1px 3px black;
+}
+
+#clock {
+    /*float: left;*/
+    /*min-height:100vh;*/
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px 20px;
+    border-color: 'black';
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px rgb(95, 93, 93);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: rgb(4, 5, 0);
+
+}
+
+.navbar {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+/*.navbar_header {
+    background: #545454;
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem 1rem;
+}*/
+.navbar_btn {
+    width: 55px;
+    align-self: center;
+    border: 5px solid rgb(60, 60, 131);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    margin: 0.5rem;
+    background: rgb(70, 38, 78);
+    transition: all 2s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.navbar_links{
+    width: 200px;
+    list-style-type: none;
+    transition: all 2s ease;
+    height: 0;
+    overflow: hidden;
+    
+}
+.navbar_collapse {
+    height: 100px;
+}
+
+.navbar_single {
+    display: block;
+    background: #69747c;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color:white;
+    transition: all 1s ease;
+}
+.navbar_single:hover {
+    padding-left: 1.5rem;
+    background: yellow;
+    color: blue;
+}
+
+.real_clock {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px;
+    border: 10px solid white;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.1),
+                0 20px 20px rgba(0,0,0,0.2),
+                0 0 0 4px rgba(255, 255, 255, 1); 
+    position: relative;
+}
+
+.real_clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    text-align: center;
+    transform: rotate(var(--rotation));
+}
+.real_clock .num1 {--rotation: 30deg}
+.real_clock .num2 {--rotation: 60deg}
+.real_clock .num3 {--rotation: 90deg}
+.real_clock .num4 {--rotation: 120deg}
+.real_clock .num5 {--rotation: 150deg}
+.real_clock .num6 {--rotation: 180deg}
+.real_clock .num7 {--rotation: 210deg}
+.real_clock .num8 {--rotation: 240deg}
+.real_clock .num9 {--rotation: 270deg}
+.real_clock .num10 {--rotation: 300deg}
+.real_clock .num11 {--rotation: 330deg}
+.real_clock .num12 {--rotation: 360deg}
+
+.real_clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 5px;
+    height: 39%;
+    background-color: black;
+    border: 1px solid white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.real_clock::after {
+    content: " ";
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.real_clock .hand.second {
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+
+.real_clock .hand.munute {
+    width: 7px;
+    height: 40%;
+    background-color: black;
+}
+
+.real_clock .hand.hour {
+    width: 7px;
+    height: 35%;
+    background-color: black;
+}
+
+
+
